@@ -16,7 +16,7 @@ public class TestScript : MonoBehaviour
     private Vector3 dashDirection;
     private bool isMoving = false;
     private bool isSprinting = false;
-    public bool isOnDash = false;
+    private bool isOnDash = false;
     private Vector3 normalizedVector;
     private Vector3 normalizedDashVector;
 
@@ -26,7 +26,7 @@ public class TestScript : MonoBehaviour
         mouseScreenPosition = value.Get<Vector2>();         //마우스 위치 업데이트
     }
 
-    public void OnClick(InputValue value)
+    public void OnRightClick(InputValue value)
     {
         if (value.isPressed)
         {
