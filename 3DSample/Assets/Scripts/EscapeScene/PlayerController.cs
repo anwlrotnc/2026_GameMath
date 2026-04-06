@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        
+        Time.timeScale = 1.0f;
     }
 
     public void RestartGame()
