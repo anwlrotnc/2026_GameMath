@@ -28,7 +28,7 @@ public class GachaSystem : MonoBehaviour
             {
                 result = gachaResult[i];
                 currentItem[i]++;
-                inventoryTexts[i].text = $"{currentItem[i]}";
+                inventoryTexts[i].text = $"{gachaResult[i]} : {currentItem[i]}";
                 if (i == 3)
                 {
                     itemPercent[0] = 0.5f;
@@ -62,7 +62,7 @@ public class GachaSystem : MonoBehaviour
         }
         for (int i = 0; i < inventoryTexts.Length; i++)
         {
-            inventoryTexts[i].text = "0";
+            inventoryTexts[i].text = $"{gachaResult[i]} : 0";
         }
     }
 
